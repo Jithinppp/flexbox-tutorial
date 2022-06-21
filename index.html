@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Flexbox Tutorial</title>
+  </head>
+  <body>
+    <div class="header--container">
+      <h3 class="logo">FlexBox</h3>
+      <ul class="nav--items">
+        <li class="nav--item"><a href="#">Home</a></li>
+        <li class="nav--item"><a href="#">Contact</a></li>
+        <li class="nav--item"><a href="#">About</a></li>
+      </ul>
+    </div>
+    <div class="main--content">
+      <div class="contents--container">
+        <h2 class="content--title">Guide to Flexbox</h2>
+        <p class="content--description">
+          The Flexible Box Module, usually referred to as flexbox, was designed
+          as a one-dimensional layout model, and as a method that could offer
+          space distribution between items in an interface and powerful
+          alignment capabilities. This article gives an outline of the main
+          features of flexbox, which we will be exploring in more detail in the
+          rest of these guides. <br />All the content copied from
+          <a
+            class="csstricks--link"
+            href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+            target="_blank"
+            >css-tricks.com
+          </a>
+        </p>
+      </div>
+      <div class="image--container">
+        <img
+          src="https://css-tricks.com/wp-content/uploads/2018/10/01-container.svg"
+          class="main--image"
+        />
+      </div>
+    </div>
+    <div class="sub--container">
+      <div class="sub--card">
+        <h4>Basics and terminology</h4>
+        <p>
+          Since flexbox is a whole module and not a single property, it involves
+          a lot of things including its whole set of properties. Some of them
+          are meant to be set on the container (parent element, known as “flex
+          container”) whereas the others are meant to be set on the children
+          (said “flex items”).
+        </p>
+        <img
+          class="card--image"
+          src="https://css-tricks.com/wp-content/uploads/2018/11/00-basic-terminology.svg"
+        />
+      </div>
+      <div class="sub--card">
+        <h4>flex-direction</h4>
+        <p>
+          This establishes the main-axis, thus defining the direction flex items
+          are placed in the flex container. Flexbox is (aside from optional
+          wrapping) a single-direction layout concept. Think of flex items as
+          primarily laying out either in horizontal rows or vertical columns.
+        </p>
+        <img
+          class="card--image"
+          src="https://css-tricks.com/wp-content/uploads/2018/10/flex-direction.svg"
+        />
+      </div>
+      <div class="sub--card">
+        <h4>flex-wrap</h4>
+        <p>
+          By default, flex items will all try to fit onto one line. You can
+          change that and allow the items to wrap as needed with this property.
+        </p>
+        <img
+          class="card--image"
+          src="https://css-tricks.com/wp-content/uploads/2018/10/flex-wrap.svg"
+        />
+      </div>
+      <!-- <div class="sub--card">
+        <h4>flex-grow</h4>
+        <p>
+          This defines the ability for a flex item to grow if necessary. It
+          accepts a unitless value that serves as a proportion. It dictates what
+          amount of the available space inside the flex container the item
+          should take up. If all items have flex-grow set to 1, the remaining
+          space in the container will be distributed equally to all children. If
+          one of the children has a value of 2, that child would take up twice
+          as much of the space either one of the others (or it will try, at
+          least).
+        </p>
+        <img
+          class="card--image"
+          src="https://css-tricks.com/wp-content/uploads/2018/10/flex-grow.svg"
+        />
+      </div> -->
+    </div>
+  </body>
+</html>
